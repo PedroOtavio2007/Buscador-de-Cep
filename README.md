@@ -16,7 +16,7 @@ Uma aplicação front-end leve, responsiva e pronta para publicação estática 
 - Tema claro/escuro com preferência persistida
 - Interface adaptada para telas pequenas e grandes
 
-## 🛠 Tecnologias
+## Tecnologias
 
 | Tecnologia | Uso |
 | --- | --- |
