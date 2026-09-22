@@ -4,7 +4,7 @@
 
 Uma aplicação front-end leve, responsiva e pronta para publicação estática na Vercel. A busca acontece automaticamente ao completar os oito dígitos do CEP e utiliza a API pública do [ViaCEP](https://viacep.com.br/).
 
-## ✨ Recursos
+## Recursos
 
 - Consulta automática ao informar um CEP válido (`00000-000`)
 - Máscara de CEP aplicada em tempo real
@@ -26,7 +26,7 @@ Uma aplicação front-end leve, responsiva e pronta para publicação estática 
 | Fetch API | Comunicação HTTP com o ViaCEP |
 | Web Storage API | Histórico e preferência de tema no `localStorage` |
 
-## 📁 Estrutura
+## Estrutura
 
 ```text
 buscador-cep/
@@ -34,7 +34,7 @@ buscador-cep/
 ├── script.js     # Serviço ViaCEP, estado visual, histórico e tema
 └── README.md
 ```
-## 🔎 Como funciona
+## Como funciona
 
 1. O campo recebe apenas números e os formata no padrão `XXXXX-XXX`.
 2. Ao atingir oito dígitos, o app consulta `https://viacep.com.br/ws/{CEP}/json/`.
@@ -44,7 +44,7 @@ buscador-cep/
 
 Requisições anteriores são canceladas quando o CEP é alterado rapidamente, evitando que uma resposta antiga sobrescreva a mais recente.
 
-## ♿ Experiência e acessibilidade
+## Experiência e acessibilidade
 
 - Elementos HTML semânticos e rótulos associados aos campos.
 - Mensagens de status com `aria-live` para leitores de tela.
@@ -52,7 +52,7 @@ Requisições anteriores são canceladas quando o CEP é alterado rapidamente, e
 - Campo numérico otimizado para teclados de dispositivos móveis.
 - Tema salvo na chave `buscador-cep:theme`; sem escolha prévia, a preferência do sistema é utilizada.
 
-## 🗃 Dados armazenados no navegador
+## Dados armazenados no navegador
 
 | Chave | Conteúdo |
 | --- | --- |
