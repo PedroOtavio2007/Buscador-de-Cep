@@ -15,7 +15,6 @@ Uma aplicação front-end leve, responsiva e pronta para publicação estática 
 - Exclusão individual de itens do histórico ou limpeza completa
 - Tema claro/escuro com preferência persistida
 - Interface adaptada para telas pequenas e grandes
-- Estrutura estática, ideal para deploy direto na Vercel
 
 ## 🛠 Tecnologias
 
@@ -35,26 +34,6 @@ buscador-cep/
 ├── script.js     # Serviço ViaCEP, estado visual, histórico e tema
 └── README.md
 ```
-
-## 🚀 Como executar localmente
-
-Como o projeto não depende de instalação de pacotes nem de etapa de build, basta abrir o arquivo `index.html` no navegador.
-
-Para uma experiência mais próxima de um servidor local, use a extensão **Live Server** do VS Code ou qualquer servidor estático. Por exemplo, com a extensão instalada:
-
-1. Abra a pasta `buscador-cep` no VS Code.
-2. Clique com o botão direito em `index.html`.
-3. Escolha **Open with Live Server**.
-
-## ▲ Deploy na Vercel
-
-1. Envie esta pasta para um repositório Git.
-2. Na Vercel, selecione **Add New → Project** e importe o repositório.
-3. Mantenha as configurações padrão: não há comando de build necessário.
-4. Clique em **Deploy**.
-
-A Vercel identifica o `index.html` e publica a aplicação como um site estático.
-
 ## 🔎 Como funciona
 
 1. O campo recebe apenas números e os formata no padrão `XXXXX-XXX`.
@@ -81,7 +60,3 @@ Requisições anteriores são canceladas quando o CEP é alterado rapidamente, e
 | `buscador-cep:theme` | Tema escolhido: `light` ou `dark` |
 
 Nenhum dado é enviado a serviços além da consulta do CEP à API ViaCEP.
-
-## 📄 Licença
-
-Este projeto pode ser usado e adaptado livremente para fins de estudo e portfólio.
